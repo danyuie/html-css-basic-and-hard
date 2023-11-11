@@ -1,0 +1,53 @@
+.navbar{
+  background: rgb(17 24 39);
+  padding: 10px;
+}
+.navbar .navbar-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-wrapper .navbar-logo{
+  display: flex;
+  align-items: center;
+  padding: 0 140px;
+}
+.navbar .navbar-wrapper .navbar-logo a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.navbar .navbar-wrapper .navbar-links ul{
+  display: flex;
+  list-style-type: none;
+  gap: 32px;
+}
+.navbar .navbar-wrapper .navbar-links ul li a{
+  text-decoration: none;
+  color: white;
+}
+.navbar .navbar-wrapper .navbar-search{
+  padding: 0 140px;
+}
+.navbar .navbar-wrapper .navbar-search .mysearch{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 10px;
+  padding: 10px 5px;
+  background: rgb(255 255 255);
+  outline: 0;
+}
+.navbar .navbar-wrapper .navbar-search .mysearch input{
+  border: none;
+  font-size: 16px;
+  padding: 0 5px;
+}
+.navbar .navbar-wrapper .navbar-links ul li a:link{
+  color: white;
+}
+.navbar .navbar-wrapper .navbar-links ul li a:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+.navbar{
+  background:rgb(14, 14, 14);
+  padding: 15px 207px;
+}
+.navbar .navbar-wrapper{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+.navbar .navbar-wrapper .navbar-links ul{
+  display: flex;
+  gap: 32px;
+  color: #000;
+}
+.navbar .navbar-wrapper .navbar-links ul li a{
+  color:white;
+  font-size: 16px;
+  font-weight: 800px;
+  text-decoration: none;
+}
+.navbar .navbar-wrapper .navbar-btn .btn-sec{
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navbar .navbar-wrapper .navbar-btn .btn-pri{
+  background: white;
+  color: #000;
+  outline: none;
+  border: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 12px 20px;
+  font-weight: 700;
+}
