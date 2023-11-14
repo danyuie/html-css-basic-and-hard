@@ -3,7 +3,7 @@
 ## **1. Before starting to study, you must download the file to your computer**
 
 ```
-git pull
+git pull origin master
 ```
 
 ## **2. Push files to github repository**
