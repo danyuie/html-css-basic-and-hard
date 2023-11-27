@@ -245,25 +245,30 @@ file `style.scss`
 ## **4. Cây Thư Mục**
 
     ```
-    name-project
-    └───assets
-        ├───css
-            ├───app.css
-            ├───app.min.css
-        └───sass
-            ├───base
-                ├───_all.sass
-                ├───_mixin.sass
-                ├───_reset.sass
-                ├───_variables.sass
-            ├───layout
-                ├───_all.sass
-                ├───_footer.sass
-                ├───_header.sass
-            ├───components
-                ├───_all.sass
-                ├───_button.sass
-            ├───pages
-                ├───_all.sass
-                ├───_contact.sass
+    └───name-project
+        ├───assets
+            ├───js
+            ├───font
+            ├───svg
+            ├───images
+            ├───css
+                ├───app.css
+                ├───app.min.css
+            └───sass
+                ├───base
+                    ├───_all.sass
+                    ├───_mixin.sass
+                    ├───_reset.sass
+                    ├───_variables.sass
+                ├───layout
+                    ├───_all.sass
+                    ├───_footer.sass
+                    ├───_header.sass
+                ├───components
+                    ├───_all.sass
+                    ├───_button.sass
+                ├───pages
+                    ├───_all.sass
+                    ├───_contact.sass
+        └───index.html
     ```
