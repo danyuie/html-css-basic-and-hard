@@ -231,14 +231,14 @@ file `style.scss`
     - Output là file minify có dạng `app.min.css`
 
         ```
-        sass --watch app.sass:../css/app.min.css --style compressed
+        sass --watch main.sass:../css/app.min.css --style compressed
         ```
         *file `app.min.css` sẽ ở trong thư mục `./assets/css`*
     
     - Output là file css có dạng `app.css`
 
         ```
-        sass --watch app.sass:../css/app.css
+        sass --watch main.sass:../css/app.css
         ```
         *file `app.css` sẽ ở trong thư mục `./assets/css`*
 
