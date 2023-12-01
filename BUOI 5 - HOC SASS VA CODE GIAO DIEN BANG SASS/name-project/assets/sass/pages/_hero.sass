@@ -1,0 +1,32 @@
+.hero
+    @extend .container, .flex, .flex-col, .item-center
+    &-content
+        .header
+            display: flex
+            flex-direction: column
+            gap: 3.2rem
+        .header img
+            width: 22.8rem
+            height: 4.4rem
+        .header p
+            font-family: "Syne"
+            line-height: 9.4rem
+            font-size: 8rem
+            font-weight: 700
+            text-align: center
+            letter-spacing: -0.1rem
+            color: $neutral-950
+        .user
+            @extend .flex, .justify-between
+            width: 100%
+        .user img
+            width: 10.3rem
+            height: 10.3rem
+        .user img:nth-child(0), .user img:nth-child(3)
+            // goi theo thu tu, danh so tu 0-n
+            margin-top: 3rem
+
+            
+
+
+

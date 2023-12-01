@@ -1,33 +1,17 @@
-// .header {
-//     font: 400 15px/15px "Inter";
-//     .navbar {
-//         padding: 8px 147px;
-//         height: 65px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         &_logo {
-//             width: 158px;
-//         }
-//         &_link {
-//             ul {
-//                 display: flex;
-//                 align-items: center;
-//                 list-style: none;
-//                 gap: 12px;
-//                 li {
-//                     .navbar_link_item {
-//                         color: #1F4062;
-//                         cursor: pointer;
-//                         text-decoration: none;
-//                         padding: 10px 12px;
-//                         border-radius: 8px;
-//                         &:hover {
-//                             background: #F5F7FB;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+.header
+    @extend .container, .flex, .justify-between, .item-center
+    padding: 2.2rem 0
+    &-links
+        @extend .flex, .item-center
+        gap: 4.8rem 
+        &_item
+            @extend .flex, .item-center, .font-syne
+            color: $neutral-800
+            text-decoration: none
+            font-weight: 600
+            font-size: 1.6rem 
+            line-height: 2rem 
+            gap: 0.2rem
+    &-button
+        @extend .flex, .item-center
+        gap: 2rem

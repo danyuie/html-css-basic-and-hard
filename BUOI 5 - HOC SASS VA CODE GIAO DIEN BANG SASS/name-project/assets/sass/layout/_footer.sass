@@ -1,0 +1,37 @@
+.footer
+    @extend .container-full, .flex, .flex-col, .justify-between, .item-center
+    background-color: $neutral-950
+    &-top 
+        @extend .container, .flex, .justify-between, .font-inter
+        padding-top: 5.8rem
+        width: 100%
+        &_item
+            display: flex
+            flex-direction: column
+            gap: 1.6rem
+            color: $white
+            font-size: 1.6rem
+            line-height: 2.6rem
+            font-weight: 300
+        &_item strong
+            background-color: $white
+            color: $black    
+            border-radius: 100rem
+            padding: 0 1rem
+            font-size: 1.2rem
+            line-height: 2rem
+            font-weight: 600
+            text-transform: uppercase
+    &-bottom
+        @extend .container, .flex, .justify-between, .item-center, 
+        color: $neutral-300
+        width: 100%
+        padding-top: 8rem
+        padding-bottom: 2.6rem
+        .social
+            display: flex
+            gap: 2.4rem
+
+
+    
+        
