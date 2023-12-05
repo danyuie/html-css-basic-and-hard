@@ -780,12 +780,12 @@ Bố cục lưới CSS vượt trội trong việc chia trang thành các vùng 
   <img src="assets/images/grid-term.jpg" alt="Grid Terminology" width="100%;" />
 </p>
 
-* **Grid item**: Đối tượng được chứa trong container lưới.
-* **Grid line**: Đường lưới là đường thẳng đứng hoặc đường ngang tạo nên cấu trúc của lưới.
-* **Grid cell**: Đơn vị nhỏ nhất trên lưới được gọi là ô lưới. Nó là khoảng trống giữa hai hàng và cột liền kề.
-* **Rows**: Hàng lưới là đường ray ngang của lưới.
-* **Columns**: Cột lưới là đường ray dọc của lưới.
-* **Gutter**: Gutter là khoảng trống giữa các hàng và cột trong lưới.
+* **Grid item**: Grid item là Đối tượng được chứa trong container lưới.
+* **Grid line**: Grid line là đường thẳng đứng (column lines) hoặc đường ngang (row lines) tạo nên cấu trúc của lưới.
+* **Grid cell**: Cell là một ô trên lưới được gọi là Grid cell. Nó là khoảng trống giữa hai column line và row line liền kề.
+* **Rows**: Rows là đường ray ngang của lưới.
+* **Columns**: Columns là đường ray dọc của lưới.
+* **Gutter (Gap)**: Gutter là khoảng trống giữa các hàng và cột trong lưới.
 
 
 **CSS Grid Properties:**
@@ -793,7 +793,7 @@ Bố cục lưới CSS vượt trội trong việc chia trang thành các vùng 
 |Thuộc tính        |Mô tả                      |
 |-----------------|----------------------------------|
 |column-gap	      |Chỉ định khoảng cách giữa các cột|
-|gap	            |Một thuộc tính viết tắt cho các thuộc tính row-gap và column-gap|
+|gap	            |Một thuộc tính viết tắt cho các thuộc tính row-gap và column-gap - **ví dụ:** ```gap: 2px 4px``` -> ```/* gap: row column */```|
 |grid	            |Một thuộc tính viết tắt cho các thuộc tính grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns và grid-auto-flow|
 |grid-area	      |Hoặc chỉ định tên cho grid item, hoặc thuộc tính này là một thuộc tính viết tắt cho các thuộc tính grid-row-start, grid-column-start, grid-row-end và grid-column-end|
 |grid-auto-columns|Chỉ định kích thước cột mặc định|
@@ -885,9 +885,9 @@ Bố cục lưới CSS vượt trội trong việc chia trang thành các vùng 
 
 ## Q. CSS flexbox là gì?
 
-Mô-đun flexbox, giúp thiết kế cấu trúc bố cục linh hoạt đáp ứng dễ dàng hơn mà không cần sử dụng float hoặc positioning. Flexbox giúp việc căn chỉnh các mục theo chiều dọc và chiều ngang bằng cách sử dụng hàng và cột trở nên đơn giản. Các vật phẩm sẽ "flex" thành các kích cỡ khác nhau để lấp đầy khoảng trống.
+flexbox, giúp thiết kế cấu trúc bố cục linh hoạt đáp ứng dễ dàng hơn mà không cần sử dụng `float` hoặc `position`. Flexbox giúp việc căn chỉnh các mục theo chiều dọc và chiều ngang bằng cách sử dụng hàng và cột trở nên đơn giản. Các item sẽ "flex" thành các kích cỡ khác nhau để lấp đầy khoảng trống.
 
-Trước mô-đun Bố cục Flexbox, có bốn layout modes:
+Trước Flexbox, có bốn layout modes:
 
 * **Block**, cho các phần trong một trang web
 * **Inline**, cho văn bản
@@ -901,7 +901,7 @@ Một vùng của tài liệu được trình bày bằng flexbox được gọi
 **Thuật ngữ Flexbox:**
 
 <p align="center">
-  <img src="assets/images/flex-terminology.png" alt="Flexbox Terminology" width="500px;" />
+  <img src="assets/images/flex-terminology.png" alt="Flexbox Terminology" width="100%;" />
 </p>
 
 <div align="right">
@@ -983,8 +983,8 @@ Một vùng của tài liệu được trình bày bằng flexbox được gọi
 * Nếu bạn chỉ cần xác định bố cục dưới dạng hàng hoặc cột thì có thể bạn cần flexbox. Nếu bạn muốn xác định lưới và điều chỉnh nội dung vào đó theo hai chiều - bạn cần có Grid.
 
 <p align="center">
-  <img src="assets/images/flex.png" alt="One-Dimensional" />
-  <img src="assets/images/grid.png" alt="Two-Dimensional" />
+  <img src="assets/images/flex.png" alt="One-Dimensional" width="100%;"/>
+  <img src="assets/images/grid.png" alt="Two-Dimensional" width="100%;"/>
 </p>
 
 **Example:**
@@ -1129,7 +1129,7 @@ Phương pháp BEM (**Block Element Modifier**) là quy ước đặt tên cho c
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Lợi ích của việc sử dụng CSS sprites là gì?
+## Q. CSS sprites là gì?
 
 CSS sprite kết hợp nhiều hình ảnh thành một hình ảnh lớn hơn. Đây là một kỹ thuật thường được sử dụng cho các biểu tượng. 
 
@@ -1151,7 +1151,7 @@ CSS sprite kết hợp nhiều hình ảnh thành một hình ảnh lớn hơn. 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Tweening trong css là gì?
+## Q. Tweening
 
 Tùy chọn **pose-to-pose** là tạo một vài khung hình chính trong suốt chuỗi, sau đó điền vào các khoảng trống sau đó. Việc lấp đầy những khoảng trống này được gọi là tweening. Đó là quá trình tạo khung trung gian giữa hai hình ảnh. Nó mang lại ấn tượng rằng hình ảnh đầu tiên đã phát triển suôn sẻ thành hình ảnh thứ hai. Trong CSS3, mô-đun Transforms (matrix, translate, rotate, scale, v.v.) có thể được sử dụng để đạt được hiệu ứng tweening.
 
