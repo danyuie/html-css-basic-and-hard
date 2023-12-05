@@ -62,7 +62,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Những cách có thể áp dụng kiểu CSS cho một trang web là gì?
+## Q. Những cách có thể áp dụng kiểu CSS cho một trang web
 
 Có ba cách để áp dụng CSS vào HTML: Inline, internal, and external.
 
@@ -138,7 +138,7 @@ Phần tử liên kết trong ví dụ có ba thuộc tính. Đầu tiên, `rel`
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Phần xếp tầng của CSS có ý nghĩa gì?
+## Q. Cascading của CSS có ý nghĩa gì?
 
 **Cascading (Xếp tầng)** trong CSS đề cập đến thực tế là các quy tắc tạo kiểu "Cascading" từ nhiều nguồn. Điều này có nghĩa là CSS có hệ thống phân cấp vốn có, trong đó các kiểu có mức độ ưu tiên cao hơn sẽ ghi đè lên các kiểu có mức độ ưu tiên thấp hơn.
 
@@ -167,19 +167,20 @@ Ngay khi bạn áp dụng một biểu định kiểu cơ bản hoặc một ki�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Giải thích các tính năng mới trong CSS3?
+## Q. Tính năng mới trong CSS3?
 
 **1. CSS3 Selectors:**
 
 Khớp với bất kỳ phần tử `E` nào có thuộc tính `attr` bắt đầu bằng giá trị `val`. Nói cách khác, `val` khớp với một phần của giá trị thuộc tính.
 
-Ví dụ: giả sử bạn có một tệp HTML có chứa các phần tử sau:
 
 ```css
 E[attr^=val]
 /* Example */
 a[href^='http://sales.']{color: teal;}
 ```
+
+Ví dụ: giả sử bạn có một tệp HTML có chứa các phần tử sau:
 
 ```html
 <a href="http://sales.example.com">Sales</a>
@@ -651,7 +652,7 @@ Các phần tử giả tạo ra các phần tử mới một cách hiệu quả 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Bộ chọn Combinator là gì?
+## Q. Selector Combinator là gì?
 
 Bộ kết hợp là ký tự trong bộ chọn kết nối hai bộ chọn với nhau. Có bốn loại tổ hợp:
 
@@ -769,14 +770,14 @@ Con số này cũng có thể được biểu thị dưới dạng hàm hoặc s
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Giải thích bố cục lưới CSS bằng ví dụ?
+## Q. Grid CSS ?
 
 Bố cục lưới CSS vượt trội trong việc chia trang thành các vùng chính hoặc xác định mối quan hệ về kích thước, vị trí và lớp, giữa các phần của điều khiển được xây dựng từ nguyên thủy HTML. Giống như bảng, bố cục lưới cho phép chúng ta sắp xếp các phần tử thành cột và hàng.
 
 **Thuật ngữ cơ bản:**
 
 <p align="center">
-  <img src="assets/images/grid-term.jpg" alt="Grid Terminology" width="500px;" />
+  <img src="assets/images/grid-term.jpg" alt="Grid Terminology" width="100%;" />
 </p>
 
 * **Grid item**: Đối tượng được chứa trong container lưới.
