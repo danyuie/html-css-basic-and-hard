@@ -13,9 +13,11 @@
 
 ## Q. CSS là gì?
 
-**CSS** là viết tắt của **Cascading Style Sheets**. CSS được sử dụng để xác định kiểu cho các trang web, bao gồm thiết kế, bố cục và các biến thể hiển thị cho các thiết bị và kích thước màn hình khác nhau. CSS nhằm mục đích cho phép các chuyên gia web tách nội dung và cấu trúc mã của trang web khỏi thiết kế trực quan.
+**CSS** là viết tắt của **Cascading Style Sheets**. CSS được sử dụng để định dạng các trang web, bao gồm thiết kế, bố cục và cách hiển thị trên các thiết bị và kích thước màn hình khác nhau. CSS nhằm mục đích cho phép các nhà phát triển web tách nội dung và cấu trúc của trang web khỏi thiết kế trực quan.
 
-CSS có thể được sử dụng để tạo kiểu cho văn bản tài liệu - ví dụ như thay đổi màu sắc và kích thước của tiêu đề và liên kết. Nó có thể được sử dụng để tạo bố cục - **ví dụ:** biến một cột văn bản thành bố cục với khu vực nội dung chính và thanh bên để biết thông tin liên quan. Nó thậm chí có thể được sử dụng cho các hiệu ứng như hoạt hình.
+CSS có thể được sử dụng để định dạng văn bản trên trang web - **Ví dụ:** như thay đổi màu sắc và kích thước của tiêu đề và liên kết. 
+
+Nó cũng có thể được sử dụng để tạo bố cục trang web - **Ví dụ:** biến một cột văn bản thành bố cục với khu vực nội dung chính và thanh bên để biết thông tin liên quan. CSS thậm chí có thể được sử dụng để tạo các hiệu ứng như hoạt hình.
 
 **Example:**
 
@@ -34,9 +36,11 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Việc sử dụng bộ quy tắc css là gì?
+## Q. Bộ quy tắc CSS
 
-CSS là một quy tắc hoặc bộ quy tắc mô tả định dạng (thay đổi hình thức) của các thành phần riêng lẻ trên một trang web. Quy tắc bao gồm hai phần: bộ chọn và khối khai báo tiếp theo. Hình ảnh bên dưới thể hiện cấu trúc (cú pháp) của quy tắc:
+CSS là một **quy tắc** hoặc **bộ quy tắc** mô tả định dạng (thay đổi hình thức) của các thành phần riêng lẻ trên một trang web. 
+
+**Quy tắc bao gồm hai phần:** bộ chọn và khối khai báo tiếp theo. Hình ảnh bên dưới thể hiện cấu trúc (cú pháp) của quy tắc:
 
 ```css
 div {
@@ -46,7 +50,7 @@ div {
 ```
 
 <p align="center">
-  <img src="assets/images/css-rule.png" alt="CSS rule" width="500px;" />
+  <img src="assets/images/css-rule.png" alt="CSS rule" width="100%;" />
 </p>
 
 * Đầu tiên luôn là **bộ chọn (Selector)**, nó cho trình duyệt biết thành phần nào hoặc các thành phần của trang web sẽ được tạo kiểu.
