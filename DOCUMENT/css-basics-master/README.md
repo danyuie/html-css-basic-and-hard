@@ -11,13 +11,14 @@
 
 <br/>
 
-## Q. CSS là gì?
+## 1. CSS là gì?
 
-**CSS** là viết tắt của **Cascading Style Sheets**. CSS được sử dụng để định dạng các trang web, bao gồm thiết kế, bố cục và cách hiển thị trên các thiết bị và kích thước màn hình khác nhau. CSS nhằm mục đích cho phép các nhà phát triển web tách nội dung và cấu trúc của trang web khỏi thiết kế trực quan.
 
-CSS có thể được sử dụng để định dạng văn bản trên trang web - **Ví dụ:** như thay đổi màu sắc và kích thước của tiêu đề và liên kết. 
+**CSS** là viết tắt của **Cascading Style Sheets** (tạm dịch là Tập tin định kiểu theo tầng), một ngôn ngữ thiết kế được sử dụng để định dạng và trình bày các phần tử HTML trên trang web. CSS giúp các nhà phát triển web dễ dàng kiểm soát ngoại hình và bố cục của một trang web mà không cần phải viết nhiều mã HTML.
 
-Nó cũng có thể được sử dụng để tạo bố cục trang web - **Ví dụ:** biến một cột văn bản thành bố cục với khu vực nội dung chính và thanh bên để biết thông tin liên quan. CSS thậm chí có thể được sử dụng để tạo các hiệu ứng như hoạt hình.
+CSS được sử dụng để xác định màu sắc, phông chữ, kích thước, khoảng cách, vị trí và các thuộc tính khác của các phần tử HTML. CSS cũng có thể được sử dụng để tạo hiệu ứng hoạt hình và chuyển đổi trên trang web.
+
+**Ví dụ:** biến một cột văn bản thành bố cục với khu vực nội dung chính và thanh bên để biết thông tin liên quan. CSS thậm chí có thể được sử dụng để tạo các hiệu ứng như hoạt hình.
 
 **Example:**
 
@@ -36,11 +37,9 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Bộ quy tắc CSS
+## 2. Bộ quy tắc CSS
 
-CSS là một **quy tắc** hoặc **bộ quy tắc** mô tả định dạng (thay đổi hình thức) của các thành phần riêng lẻ trên một trang web. 
-
-**Quy tắc bao gồm hai phần:** bộ chọn và khối khai báo tiếp theo. Hình ảnh bên dưới thể hiện cấu trúc (cú pháp) của quy tắc:
+Bộ quy tắc CSS là một tập hợp các quy tắc CSS được sử dụng để định dạng các phần tử HTML trên một trang web. Bộ quy tắc CSS thường được đặt trong một tệp CSS riêng biệt, có thể được liên kết với trang web bằng thẻ `<link>`.
 
 ```css
 div {
@@ -49,20 +48,26 @@ div {
 }
 ```
 
+**Quy tắc bao gồm hai phần:** 
+* **Bộ chọn:** Bộ chọn xác định các phần tử HTML mà các quy tắc CSS sẽ được áp dụng.
+* **Giá trị:** Giá trị xác định thuộc tính của phần tử HTML sẽ được thay đổi.
+
+Hình ảnh bên dưới thể hiện cấu trúc (cú pháp) của quy tắc:
+
 <p align="center">
   <img src="assets/images/css-rule.png" alt="CSS rule" width="100%;" />
 </p>
 
-* Đầu tiên luôn là **bộ chọn (Selector)**, nó cho trình duyệt biết thành phần nào hoặc các thành phần của trang web sẽ được tạo kiểu.
-* Tiếp theo là **khối khai báo (Declaration block)**, bắt đầu bằng dấu ngoặc nhọn mở `{`, kết thúc bằng dấu đóng `}`, giữa các dấu ngoặc nhọn là các lệnh định dạng (khai báo) được chỉ định, được trình duyệt sử dụng để tạo kiểu cho phần tử bộ chọn đã chọn.
-* Mỗi **khai báo (Declaration)** bao gồm hai phần: thuộc tính và giá trị của nó. Phần khai báo phải luôn kết thúc bằng dấu chấm phẩy (;). Bạn có thể bỏ qua ; chỉ ở cuối phần khai báo cuối cùng trước dấu ngoặc nhọn đóng.
-* **thuộc tính (Property)** là lệnh định dạng xác định hiệu ứng kiểu cụ thể cho một phần tử. Mỗi thuộc tính có tập hợp giá trị được xác định trước của riêng nó. Sau tên thuộc tính, dấu hai chấm được chỉ định để phân tách tên thuộc tính khỏi giá trị hợp lệ.
+* **Bộ chọn (selector):** luôn xuất hiện đầu tiên. Nó cho trình duyệt biết thành phần nào hoặc các thành phần của trang web sẽ được tạo kiểu.
+* **Khối khai báo (declaration block):** bắt đầu bằng dấu ngoặc nhọn mở `{`, kết thúc bằng dấu đóng `}`. Giữa các dấu ngoặc nhọn là các lệnh định dạng (khai báo) được chỉ định, được trình duyệt sử dụng để tạo kiểu cho phần tử bộ chọn đã chọn.
+* **Mỗi khai báo (declaration)** bao gồm hai phần: thuộc tính và giá trị của nó. Phần khai báo phải luôn kết thúc bằng dấu chấm phẩy (`;`). Bạn có thể bỏ qua dấu chấm phẩy (`;`) chỉ ở cuối phần khai báo cuối cùng trước dấu ngoặc nhọn đóng.
+* **Thuộc tính (property)** là lệnh định dạng xác định hiệu ứng kiểu cụ thể cho một phần tử. Mỗi thuộc tính có tập hợp giá trị được xác định trước của riêng nó. Sau tên thuộc tính, dấu hai chấm (`:`) được chỉ định để phân tách tên thuộc tính khỏi giá trị hợp lệ.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Những cách có thể áp dụng kiểu CSS cho một trang web
+## 3. Những cách có thể áp dụng CSS cho một trang web
 
 Có ba cách để áp dụng CSS vào HTML: Inline, internal, and external.
 
@@ -124,41 +129,41 @@ Trong các quy tắc CSS bên ngoài được lưu trữ trong một tệp riên
 ```
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>External CSS Example</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>External CSS Example</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
 ...
 ```
 
-Phần tử liên kết trong ví dụ có ba thuộc tính. Đầu tiên, `rel` cho trình duyệt biết loại mục tiêu của liên kết. Thứ hai, `type` cho trình duyệt biết đó là loại biểu định kiểu nào. Và thứ ba, `href` cho trình duyệt biết URL của biểu định kiểu cần tìm.
+Phần tử `<link>` trong ví dụ có ba thuộc tính. Đầu tiên, `rel` cho trình duyệt biết loại mục tiêu của liên kết. Thứ hai, `type` cho trình duyệt biết đó là loại biểu định kiểu nào. Và thứ ba, `href` cho trình duyệt biết URL của file css.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Cascading của CSS có ý nghĩa gì?
+## 4. Cascading của CSS có ý nghĩa gì?
 
 **Cascading (Xếp tầng)** trong CSS đề cập đến thực tế là các quy tắc tạo kiểu "Cascading" từ nhiều nguồn. Điều này có nghĩa là CSS có hệ thống phân cấp vốn có, trong đó các kiểu có mức độ ưu tiên cao hơn sẽ ghi đè lên các kiểu có mức độ ưu tiên thấp hơn.
 
 Ngay cả tài liệu HTML đơn giản nhất cũng có thể có ba hoặc nhiều biểu định kiểu được liên kết với nó, bao gồm:
 
-* Bảng định kiểu của **trình duyệt**
-* Bảng định kiểu của **người dùng**
-* Bảng định kiểu của **tác giả**
+* Stylesheet của **trình duyệt**
+* Stylesheet của **người dùng**
+* Stylesheet của **tác giả**
 
-**1. Bảng định kiểu của trình duyệt:**
+**1. Stylesheet của trình duyệt:**
 
 Trình duyệt áp dụng các kiểu cho tất cả các tài liệu web. Mặc dù các kiểu này có thể khác nhau giữa các trình duyệt, nhưng chúng đều có một số điểm chung, chẳng hạn như văn bản màu đen, liên kết màu xanh lam và liên kết đã truy cập màu tím. Các kiểu này được gọi là kiểu trình duyệt "mặc định".
 
 Ngay khi bạn, tác giả, áp dụng biểu định kiểu cho tài liệu, nó sẽ ghi đè biểu định kiểu của trình duyệt. Điều này là do các biểu định kiểu của tác giả được ưu tiên hơn các biểu định kiểu của trình duyệt.
 
-**2. Bảng định kiểu của người dùng:**
+**2. Stylesheet của người dùng:**
 
 Hầu hết các trình duyệt hiện đại đều cho phép người dùng thiết lập các biểu định kiểu của riêng họ trong trình duyệt của họ. Các biểu định kiểu này sẽ ghi đè các biểu định kiểu mặc định của trình duyệt - chỉ dành cho người dùng đó.
 
-**3. Bảng định kiểu của tác giả:**
+**3. Stylesheet của tác giả:**
 
 Ngay khi bạn áp dụng một biểu định kiểu cơ bản hoặc một kiểu nội tuyến cho một trang, bạn đã thêm cái được gọi là "biểu định kiểu tác giả". Mọi thứ bạn làm trong CSS, từ việc chọn phông chữ, màu sắc và bố cục trang, đều được thực hiện bằng cách sử dụng các biểu định kiểu của tác giả.
 
@@ -167,7 +172,7 @@ Ngay khi bạn áp dụng một biểu định kiểu cơ bản hoặc một ki�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Tính năng mới trong CSS3?
+## 5. Tính năng mới trong CSS3?
 
 **1. CSS3 Selectors:**
 
@@ -328,7 +333,7 @@ text-shadow: topOffset leftOffset blurRadius color;
 
 **9. Multiple Background Images:**
 
-Trong CSS3, không cần thêm phần tử cho mọi hình nền; nó cung cấp cho chúng tôi khả năng thêm nhiều hình nền vào bất kỳ phần tử nào, ngay cả với các phần tử giả.
+Trong CSS3, không cần thêm phần tử cho mọi hình nền; nó cung cấp cho chúng ta khả năng thêm nhiều hình nền vào bất kỳ phần tử nào, ngay cả với các phần tử giả.
 
 ```css
 background-image:
@@ -341,7 +346,7 @@ url(thirdImage.png);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Bộ chọn (Selectors) css là gì?
+## 6. Selectors CSS
 
 Bộ chọn CSS là một phần của bộ quy tắc CSS thực sự chọn nội dung bạn muốn tạo kiểu.
 
@@ -579,7 +584,7 @@ Ví dụ: nó có thể được sử dụng để:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Bộ chọn theo ngữ cảnh là gì?
+## 7. Bộ chọn theo ngữ cảnh là gì?
 
 Bộ chọn theo ngữ cảnh giải quyết sự xuất hiện cụ thể của một phần tử. Đó là một chuỗi các bộ chọn riêng lẻ được phân tách bằng khoảng trắng (mẫu tìm kiếm), trong đó chỉ phần tử cuối cùng trong mẫu được xử lý nếu nó khớp với ngữ cảnh đã chỉ định.
 
@@ -588,73 +593,73 @@ Nó cũng kiểm tra ngữ cảnh của lớp trong cây HTML, gán kiểu cho p
 **Example:**
 
 ```css
-table p { property: value; } 
+  table p { property: value; } 
 ```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa các lớp giả và các phần tử giả là gì?
+## 8. Pseudo-classes và Pseudo-elements
 
-Lớp giả là một bộ chọn hỗ trợ việc lựa chọn thứ gì đó mà bộ chọn đơn giản không thể biểu thị được, ví dụ `:hover`. Tuy nhiên, phần tử giả cho phép chúng ta tạo các mục thường không tồn tại trong cây tài liệu, ví dụ: `::after`.
+Pseudo-classes ( Lớp giả ) là một bộ chọn hỗ trợ việc lựa chọn thứ gì đó mà bộ chọn đơn giản không thể biểu thị được, ví dụ `:hover`. Tuy nhiên, phần tử giả cho phép chúng ta tạo các mục thường không tồn tại trong cây tài liệu, ví dụ: `::after`.
 
-**Pseudo-classes:**  
+### **# Pseudo-classes:**  
 
 Các lớp giả chọn các phần tử thông thường nhưng trong những điều kiện nhất định, chẳng hạn như khi vị trí của chúng so với anh chị em hoặc khi chúng ở trong một trạng thái cụ thể. Dưới đây là danh sách các lớp giả trong CSS3:
 
 **a) Dynamic pseudo-classes:**  
 
-* :link
-* :visited
-* :hover
-* :active
-* :focus
+* `:link`
+* `:visited`
+* `:hover`
+* `:active`
+* `:focus`
 
 **b) UI element states pseudo-classes:**  
 
-* :enabled
-* :disabled
-* :checked
+* `:enabled`
+* `:disabled`
+* `:checked`
 
 **c) Structural pseudo-classes:**  
 
-* :first-child
-* :nth-child(n)
-* :nth-last-child(n)
-* :nth-of-type(n)
-* :nth-last-of-type(n)
-* :last-child
-* :first-of-type
-* :last-of-type
-* :only-child
-* :only-of-type
-* :root
-* :empty
+* `:first-child`
+* `:nth-child(n)`
+* `:nth-last-child(n)`
+* `:nth-of-type(n)`
+* `:nth-last-of-type(n)`
+* `:last-child`
+* `:first-of-type`
+* `:last-of-type`
+* `:only-child`
+* `:only-of-type`
+* `:root`
+* `:empty`
 
 **d) Other pseudo-classes:**  
 
-:not(x)
-:target
-:lang(language)
+* `:not(x)`
+* `:target`
+* `:lang(language)`
 
-**Pseudo-elements:**  
+### **# Pseudo-elements:**  
 
 Các phần tử giả tạo ra các phần tử mới một cách hiệu quả không được chỉ định trong phần đánh dấu của tài liệu và có thể được thao tác giống như một phần tử thông thường.
 
-* ::before
-* ::after
-* ::first-letter
-* ::first-line
-* ::selection
+* `::before`
+* `::after`
+* `::first-letter`
+* `::first-line`
+* `::selection`
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Selector Combinator là gì?
+## 9. Selector Combinator là gì?
 
-Bộ kết hợp là ký tự trong bộ chọn kết nối hai bộ chọn với nhau. Có bốn loại tổ hợp:
+Selector Combinator là ký tự trong bộ chọn kết nối hai bộ chọn với nhau. Có bốn loại tổ hợp:
 
 **a) Bộ kết hợp con cháu (dấu cách) (Descendant Combinator)**: Bộ chọn con cháu khớp với tất cả các phần tử là con cháu của một phần tử được chỉ định.
 
@@ -700,9 +705,9 @@ div ~ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa bộ chọn lớp và bộ chọn id là gì?
+## 10. Sự khác biệt giữa bộ chọn Class và bộ chọn Id là gì?
 
-Trong CSS, bộ chọn class là tên đứng trước dấu chấm (".") và bộ chọn ID là tên đứng trước ký tự băm ("#"). Sự khác biệt giữa ID và class là ID có thể được sử dụng để xác định một phần tử, trong khi một class có thể được sử dụng để xác định nhiều phần tử.
+Trong CSS, bộ chọn Class là tên đứng trước dấu chấm (`.`) và bộ chọn ID là tên đứng trước ký tự băm (`#`). Sự khác biệt giữa ID và class là ID có thể được sử dụng để xác định một phần tử, trong khi một class có thể được sử dụng để xác định nhiều phần tử.
 
 ```css
 #top {
@@ -728,7 +733,7 @@ Trong CSS, bộ chọn class là tên đứng trước dấu chấm (".") và b�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa bộ chọn “nth-child()” và “nth-of-type()” là gì?
+## 11. Sự khác biệt giữa bộ chọn “nth-child()” và “nth-of-type()” là gì?
 
 Lớp giả `nth-child()` được sử dụng để so khớp một phần tử dựa trên một số, đại diện cho vị trí của phần tử đó trong số các phần tử anh chị em của nó. Cụ thể hơn, con số này biểu thị số anh chị em tồn tại trước phần tử trong cây tài liệu (trừ 1).
 
@@ -748,9 +753,9 @@ Lớp giả `nth-child()` được sử dụng để so khớp một phần tử
 </div>
 ```
 
-Lớp giả `nth-of-type()`, như `nth-child()`, được sử dụng để so khớp một phần tử dựa trên một số. Tuy nhiên, con số này chỉ thể hiện vị trí của phần tử trong số các anh chị em của nó có cùng loại phần tử.
+Lớp giả `nth-of-type()`, `nth-child()`, được sử dụng để so khớp một phần tử dựa trên một số. Tuy nhiên, con số này chỉ thể hiện vị trí của phần tử trong số các anh chị em của nó có cùng loại phần tử.
 
-Con số này cũng có thể được biểu thị dưới dạng hàm hoặc sử dụng từ khóa chẵn hoặc lẻ.
+Con số này cũng có thể được biểu thị dưới dạng hàm hoặc sử dụng từ khóa chẵn (`even`) hoặc lẻ (`odd`).
 
 ```css
 .example p:nth-of-type(odd) { background: #ffdb3a; }
@@ -770,7 +775,7 @@ Con số này cũng có thể được biểu thị dưới dạng hàm hoặc s
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Grid CSS ?
+## 12. Grid CSS ?
 
 Bố cục lưới CSS vượt trội trong việc chia trang thành các vùng chính hoặc xác định mối quan hệ về kích thước, vị trí và lớp, giữa các phần của điều khiển được xây dựng từ nguyên thủy HTML. Giống như bảng, bố cục lưới cho phép chúng ta sắp xếp các phần tử thành cột và hàng.
 
@@ -780,7 +785,7 @@ Bố cục lưới CSS vượt trội trong việc chia trang thành các vùng 
   <img src="assets/images/grid-term.jpg" alt="Grid Terminology" width="100%;" />
 </p>
 
-* **Grid item**: Grid item là Đối tượng được chứa trong container lưới.
+* **Grid item**: Grid item là đối tượng được chứa trong container lưới.
 * **Grid line**: Grid line là đường thẳng đứng (column lines) hoặc đường ngang (row lines) tạo nên cấu trúc của lưới.
 * **Grid cell**: Cell là một ô trên lưới được gọi là Grid cell. Nó là khoảng trống giữa hai column line và row line liền kề.
 * **Rows**: Rows là đường ray ngang của lưới.
@@ -883,9 +888,9 @@ Bố cục lưới CSS vượt trội trong việc chia trang thành các vùng 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. CSS flexbox là gì?
+## 13. Flexbox CSS 
 
-flexbox, giúp thiết kế cấu trúc bố cục linh hoạt đáp ứng dễ dàng hơn mà không cần sử dụng `float` hoặc `position`. Flexbox giúp việc căn chỉnh các mục theo chiều dọc và chiều ngang bằng cách sử dụng hàng và cột trở nên đơn giản. Các item sẽ "flex" thành các kích cỡ khác nhau để lấp đầy khoảng trống.
+Flexbox, giúp thiết kế cấu trúc bố cục linh hoạt đáp ứng dễ dàng hơn mà không cần sử dụng `float` hoặc `position`. Flexbox giúp việc căn chỉnh các mục theo chiều dọc và chiều ngang bằng cách sử dụng hàng và cột trở nên đơn giản. Các item sẽ "flex" thành các kích cỡ khác nhau để lấp đầy khoảng trống.
 
 Trước Flexbox, có bốn layout modes:
 
@@ -908,7 +913,7 @@ Một vùng của tài liệu được trình bày bằng flexbox được gọi
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Tất cả các thuộc tính của flexbox?
+## 14. Tất cả các thuộc tính của flexbox?
 
 **Thuộc tính CSS Flexbox Container:**
 
@@ -917,7 +922,7 @@ Một vùng của tài liệu được trình bày bằng flexbox được gọi
 |display:        |flexbox, inline-flex;|
 |flex-direction: |row, row-reverse, column, column-reverse;|
 |flex-wrap:      |nowrap, wrap, wrap-reverse;|
-|flex-flow:      |`flex-direction`, `flex-wrap`|
+|flex-flow:      |flex-direction, flex-wrap|
 |justify-content:|flex-start, flex-end, center, space-between, space-around;|
 |align-items:    |flex-start, flex-end, center, baseline, stretch;|
 |align-content:  |flex-start, flex-end, center, space-between, space-around, stretch;|
@@ -975,11 +980,11 @@ Một vùng của tài liệu được trình bày bằng flexbox được gọi
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Khi nào nên sử dụng Grid và flexbox?
+## 15. Khi nào nên sử dụng Grid và flexbox?
 
 * CSS Grid Layout là một hệ thống **hai chiều**, nghĩa là nó có thể xử lý cả cột và hàng, không giống như flexbox phần lớn là hệ thống **một chiều** (trong một cột hoặc một hàng).
 * Điểm khác biệt cốt lõi giữa CSS Grid và Flexbox là — cách tiếp cận của CSS Grid là **bố cục trước** trong khi cách tiếp cận của Flexbox là **nội dung trước tiên**. Nếu bạn nhận thức rõ về nội dung của mình trước khi tạo bố cục, thì hãy mù quáng chọn Flexbox và nếu không, hãy chọn CSS Grid.
-* Bố cục Flexbox phù hợp nhất với các thành phần của ứng dụng (vì hầu hết chúng về cơ bản là tuyến tính) và các bố cục **quy mô nhỏ**, trong khi bố cục Lưới dành cho các bố cục **quy mô lớn hơn** tuyến tính trong thiết kế của họ.
+* Bố cục Flexbox phù hợp nhất với các thành phần của ứng dụng (vì hầu hết chúng về cơ bản là tuyến tính) và các bố cục **quy mô nhỏ**, trong khi bố cục Grid dành cho các bố cục **quy mô lớn hơn** tuyến tính trong thiết kế của họ.
 * Nếu bạn chỉ cần xác định bố cục dưới dạng hàng hoặc cột thì có thể bạn cần flexbox. Nếu bạn muốn xác định lưới và điều chỉnh nội dung vào đó theo hai chiều - bạn cần có Grid.
 
 <p align="center">
@@ -1068,7 +1073,7 @@ Một vùng của tài liệu được trình bày bằng flexbox được gọi
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. CSS BEM là gì?
+## 16. CSS BEM là gì?
 
 Phương pháp BEM (**Block Element Modifier**) là quy ước đặt tên cho các lớp CSS nhằm giúp CSS dễ bảo trì hơn bằng cách xác định các không gian tên để giải quyết các vấn đề về phạm vi. Khối là một thành phần độc lập có thể tái sử dụng trong các dự án và hoạt động như một "không gian tên" cho các thành phần phụ (Thành phần). Công cụ sửa đổi được sử dụng làm cờ khi Khối hoặc Phần tử ở trạng thái nhất định hoặc có cấu trúc hoặc kiểu dáng khác nhau.
 
@@ -1129,7 +1134,7 @@ Phương pháp BEM (**Block Element Modifier**) là quy ước đặt tên cho c
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. CSS sprites là gì?
+## 17. CSS sprites là gì?
 
 CSS sprite kết hợp nhiều hình ảnh thành một hình ảnh lớn hơn. Đây là một kỹ thuật thường được sử dụng cho các biểu tượng. 
 
@@ -1143,15 +1148,15 @@ CSS sprite kết hợp nhiều hình ảnh thành một hình ảnh lớn hơn. 
 
 **Các lựa chọn thay thế:**
 
-* URI dữ liệu - cho phép bạn nhúng dữ liệu hình ảnh trực tiếp vào biểu định kiểu. Điều này tránh các yêu cầu HTTP bổ sung cho hình ảnh, khiến nó về cơ bản giống như một sprite mà không có vị trí ưa thích.
-* Icon Fonts
-* SVG
+* `URI data` - cho phép bạn nhúng dữ liệu hình ảnh trực tiếp vào biểu định kiểu. Điều này tránh các yêu cầu HTTP bổ sung cho hình ảnh, khiến nó về cơ bản giống như một sprite mà không có vị trí ưa thích.
+* `Icon Fonts`
+* `SVG`
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Tweening
+## 18. Tweening
 
 Tùy chọn **pose-to-pose** là tạo một vài khung hình chính trong suốt chuỗi, sau đó điền vào các khoảng trống sau đó. Việc lấp đầy những khoảng trống này được gọi là tweening. Đó là quá trình tạo khung trung gian giữa hai hình ảnh. Nó mang lại ấn tượng rằng hình ảnh đầu tiên đã phát triển suôn sẻ thành hình ảnh thứ hai. Trong CSS3, mô-đun Transforms (matrix, translate, rotate, scale, v.v.) có thể được sử dụng để đạt được hiệu ứng tweening.
 
@@ -1180,7 +1185,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Giải thích sự khác biệt giữa `visibility:hidden;` và `display: none;`? Những ưu và nhược điểm của việc sử dụng `display:none` là gì?
+## 19. Giải thích sự khác biệt giữa `visibility:hidden;` và `display: none;`? Những ưu và nhược điểm của việc sử dụng `display:none` là gì?
 
 * **visibility: hidden** chỉ ẩn phần tử nhưng nó sẽ chiếm không gian và ảnh hưởng đến bố cục của tài liệu.
 * **display: none** xóa phần tử khỏi luồng bố cục thông thường (gây ra hiện tượng chỉnh lại dòng DOM). Nó sẽ không ảnh hưởng đến bố cục của tài liệu cũng như không chiếm dung lượng.
@@ -1189,7 +1194,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Mục đích của `z-index` là gì và bối cảnh xếp chồng được hình thành như thế nào?
+## 20. Mục đích của `z-index` là gì và bối cảnh xếp chồng được hình thành như thế nào?
 
 `z-index` giúp chỉ định thứ tự ngăn xếp của các phần tử được định vị có thể chồng lên nhau. Giá trị mặc định `z-index` bằng 0 và có thể nhận số dương hoặc số âm. Phần tử có `z-index` cao hơn luôn được xếp chồng lên trên chỉ mục thấp hơn.
 
@@ -1237,10 +1242,10 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Giải thích thuộc tính Position CSS?
+## 21. Giải thích thuộc tính Position CSS?
 
 <p align="center">
-  <img src="assets/images/css-position-all.png" alt="One-Dimensional" />
+  <img src="assets/images/css-position-all.png" alt="One-Dimensional" width="100%;"/>
 </p>
 
 * **absolute**, Định vị tuyệt đối đặt một phần tử chính xác vị trí bạn muốn đặt nó. Vị trí tuyệt đối thực sự được đặt tương đối so với thẻ cha của phần tử. Nếu không có thẻ cha nào có sẵn, thì nó sẽ được đặt tương đối so với chính trang (nó sẽ mặc định quay trở lại thẻ <html>).
@@ -1257,7 +1262,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa relative và absolute trong CSS là gì?
+## 22. Sự khác biệt giữa relative và absolute trong CSS là gì?
 
 **Relative Position**
 
@@ -1266,7 +1271,7 @@ Một phần tử có `position: relative;` được định vị so với vị 
 Việc đặt các thuộc tính trên, phải, dưới và trái của một phần tử có vị trí tương đối sẽ khiến phần tử đó bị điều chỉnh khỏi vị trí bình thường. Nội dung khác sẽ không được điều chỉnh để phù hợp với bất kỳ khoảng trống nào mà phần tử để lại.
 
 <p align="center">
-  <img src="assets/images/relative-position.png" alt="CSS rule" width="250px;" />
+  <img src="assets/images/relative-position.png" alt="CSS rule" width="100%;" />
 </p>
 
 **Example:**
@@ -1301,7 +1306,7 @@ Việc đặt các thuộc tính trên, phải, dưới và trái của một ph
 Một phần tử có `position: absolute;` sẽ khiến nó điều chỉnh vị trí của nó so với phần tử mẹ của nó. Nếu không có cha mẹ thì nó sẽ sử dụng nội dung tài liệu làm cha mẹ.
 
 <p align="center">
-  <img src="assets/images/absolute-position.png" alt="CSS rule" width="350px;" />
+  <img src="assets/images/absolute-position.png" alt="CSS rule" width="100%;" />
 </p>
 
 **Example:**
@@ -1346,7 +1351,7 @@ Một phần tử có `position: absolute;` sẽ khiến nó điều chỉnh v�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa phần tử block, inline and inline-block?
+## 23. Sự khác biệt giữa phần tử block, inline and inline-block?
 
 **a) Block Elements**  
 Các Block Elements luôn bắt đầu trên một dòng mới. Chúng cũng sẽ chiếm không gian của toàn bộ hàng hoặc chiều rộng. Danh sách các phần tử khối là `<p>`, `<h1>`, `<div>`, `<header>`.
@@ -1407,7 +1412,7 @@ button {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Bộ đếm trong CSS3 là gì?
+## 24. Bộ đếm trong CSS3 là gì?
 
 Bộ đếm CSS cho phép bạn điều chỉnh giao diện của nội dung dựa trên vị trí của nó trong tài liệu. Để sử dụng bộ đếm CSS, trước tiên nó phải được khởi tạo thành một giá trị có thuộc tính `counter-reset` (0 theo mặc định). Thuộc tính tương tự cũng có thể được sử dụng để thay đổi giá trị của nó thành bất kỳ số cụ thể nào. Sau khi được khởi tạo, giá trị của bộ đếm có thể tăng hoặc giảm theo mức tăng của bộ đếm. Tên của bộ đếm không được là "none", "inherit" hoặc "initial"; nếu không thì dòng code sẽ bị bỏ qua.
 
@@ -1470,7 +1475,7 @@ h3::before {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Chỉ định đơn vị trong CSS như thế nào?
+## 25. Chỉ định đơn vị trong CSS như thế nào?
 
 Có nhiều đơn vị khác nhau trong CSS để thể hiện số đo và độ dài. Đơn vị CSS được sử dụng để xác định kích thước thuộc tính mà chúng tôi đặt cho một phần tử hoặc nội dung của nó. Các đơn vị trong CSS bắt buộc phải xác định được số đo như: lề: 20px; trong đó px (hoặc pixel) là đơn vị CSS. Chúng được sử dụng để đặt lề, phần đệm, độ dài, v.v.
 
@@ -1549,7 +1554,7 @@ Sau đây là tất cả các đơn vị độ dài tuyệt đối - chúng khô
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Cái nào được sử dụng nhiều hơn trong số px, em % hoặc pt và tại sao?
+## 26. Cái nào được sử dụng nhiều hơn trong số px, em % hoặc pt và tại sao?
 
 * `px` cung cấp khả năng kiểm soát chi tiết và duy trì căn chỉnh vì 1 px hoặc bội số của 1 px được đảm bảo trông sắc nét. px không phải là cascade, điều này có nghĩa là nếu font-size của phần tử cha là 20px và phần tử con là 16px. phần tử con sẽ là 16px.
 
@@ -1564,7 +1569,7 @@ Sau đây là tất cả các đơn vị độ dài tuyệt đối - chúng khô
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Pseudo element và Pseudo class là gì?
+## 27. Pseudo element và Pseudo class là gì?
 
 **1. Pseudo Element**: Phần tử giả CSS được sử dụng để tạo kiểu cho các phần được chỉ định của phần tử.
 
@@ -1632,7 +1637,7 @@ Ví dụ: nó có thể được sử dụng để:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Giải thích “Box Model” CSS và các thành phần bố cục mà nó bao gồm?
+## 28. Giải thích “Box Model” CSS và các thành phần bố cục mà nó bao gồm?
 
 Mô hình hộp CSS là mô hình bố cục hình chữ nhật cho các phần tử HTML bao gồm:
 
@@ -1642,7 +1647,7 @@ Mô hình hộp CSS là mô hình bố cục hình chữ nhật cho các phần 
 * **Margin**: Vùng trong suốt xung quanh đường viền (tức là khoảng cách giữa đường viền và bất kỳ phần tử lân cận nào)
 
 <p align="center">
-  <img src="assets/images/box-model.png" alt="CSS Box Model" width="300px;" />
+  <img src="assets/images/box-model.png" alt="CSS Box Model" width="100%;" />
 </p>
 
 Kích thước của hộp được tính như sau:
@@ -1685,7 +1690,7 @@ Kích thước của hộp được tính như sau:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Bạn làm cách nào để yêu cầu trình duyệt trong CSS hiển thị bố cục của bạn trong các box models khác nhau?
+## 29. Bạn làm cách nào để yêu cầu trình duyệt trong CSS hiển thị bố cục của bạn trong các box models khác nhau?
 
 Thuộc tính **box-sizing** cho phép chúng ta bao gồm phần đệm và đường viền trong tổng chiều rộng và chiều cao của phần tử. Nếu bạn đặt `box-sizing: border-box;` trên một phần tử, phần đệm và đường viền sẽ được bao gồm trong chiều rộng và chiều cao
 
@@ -1750,7 +1755,7 @@ box-sizing: content-box|border-box|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa border-box và content-box?
+## 30. Sự khác biệt giữa border-box và content-box?
 
 **1. content-box:**
 
@@ -1761,14 +1766,14 @@ Thuộc tính box-sizing mặc định. Thuộc tính width và height (và thu�
 Thuộc tính width và height (và thuộc tính min/max) bao gồm content, padding và border.
 
 <p align="center">
-  <img src="assets/images/content-box-vs-border-box.png" alt="border-box vs content-box" width="600px;" />
+  <img src="assets/images/content-box-vs-border-box.png" alt="border-box vs content-box" width="100%;" />
 </p>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Trong CSS3, bạn sẽ chọn như thế nào?
+## 31. Trong CSS3, bạn sẽ chọn như thế nào?
 
 * Mọi phần tử ```<a>``` có giá trị thuộc tính `href` bắt đầu bằng `“https”`.
 ```css
@@ -1789,10 +1794,10 @@ Thuộc tính width và height (và thuộc tính min/max) bao gồm content, pa
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Mục đích của thuộc tính kích thước hộp là gì?
+## 32. Mục đích của thuộc tính kích thước hộp là gì?
 
 <p align="center">
-  <img src="assets/images/box-sizing.jpg" alt="One-Dimensional" width="75%" />
+  <img src="assets/images/box-sizing.jpg" alt="One-Dimensional" width="100%" />
 </p>
 
 Thuộc tính CSS box-sizing đặt cách tính tổng chiều rộng và chiều cao của một phần tử.
@@ -1815,7 +1820,7 @@ padding: 5px;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa RGBa, HEX và HSLa là gì?
+## 33. Sự khác biệt giữa RGBa, HEX và HSLa là gì?
 
 * **RGB** (Red/Green/Blue) là mẫu màu.
 
@@ -1845,7 +1850,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Bộ tiền xử lý CSS là gì?
+## 34. Bộ tiền xử lý CSS là gì?
 
 Bộ xử lý trước mở rộng CSS với các variables, operators, interpolations, funtions, mixin và nhiều nội dung có thể sử dụng khác. Sau khi phát triển, các tệp cụ thể này được biên dịch thành CSS thông thường mà bất kỳ trình duyệt nào cũng có thể hiểu được. Bộ tiền xử lý giúp viết các mã có thể tái sử dụng, dễ bảo trì và mở rộng trong CSS.
 
@@ -1868,7 +1873,7 @@ Bộ xử lý trước mở rộng CSS với các variables, operators, interpol
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q.Sự khác biệt giữa CSS "resetting" và "normalizing" là gì?
+## 35.Sự khác biệt giữa CSS "resetting" và "normalizing" là gì?
 
 **1. Resetting**: Đặt lại CSS nhằm mục đích loại bỏ tất cả kiểu dáng trình duyệt tích hợp. Ví dụ: lề, phần đệm, cỡ chữ của tất cả các thành phần được đặt lại giống nhau. Bạn sẽ phải khai báo lại kiểu dáng cho các thành phần kiểu chữ phổ biến.
 
@@ -1905,7 +1910,7 @@ footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Giải thích CSS Block Formatting Context?
+## 36. Giải thích CSS Block Formatting Context?
 
 Floats, absolutely positioned elements, block containers (chẳng hạn như inline-blocks, table-cells, and table-captions) không phải làblock boxes và block boxes có 'overflow' ngoài 'visible' (trừ khi giá trị đó đã được truyền bá vào khung nhìn) thiết lập bối cảnh định dạng khối mới cho nội dung của chúng.
 
@@ -1979,11 +1984,11 @@ Trong BFC, cạnh ngoài bên trái của mỗi hộp chạm vào cạnh trái c
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. `overflow: hidden` có tạo bối cảnh định dạng Block mới không?
+## 37. `overflow: hidden` có tạo bối cảnh định dạng Block mới không?
 
 Đúng. Thuộc tính `overflow` xử lý nội dung nếu kích thước nội dung vượt quá kích thước được phân bổ cho nội dung. Bạn có thể hiển thị, ẩn, cuộn hoặc tự động nội dung bổ sung (hành vi mặc định của khung nhìn).
 
-## Q. Bạn sẽ khắc phục các vấn đề về kiểu dáng dành riêng cho trình duyệt như thế nào?
+## 38. Bạn sẽ khắc phục các vấn đề về kiểu dáng dành riêng cho trình duyệt như thế nào?
 
 * Sử dụng một biểu định kiểu riêng chỉ tải khi trình duyệt cụ thể đó đang được sử dụng. Tuy nhiên, kỹ thuật này yêu cầu kết xuất phía máy chủ.
 * Sử dụng `autoprefixer` để tự động thêm tiền tố của nhà cung cấp vào mã của bạn.
@@ -2013,7 +2018,7 @@ Trong BFC, cạnh ngoài bên trái của mỗi hộp chạm vào cạnh trái c
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Kỹ thuật image replacement là gì và sử dụng kỹ thuật nào khi nào?
+## 39. Kỹ thuật image replacement là gì và sử dụng kỹ thuật nào khi nào?
 
 **Kỹ thuật: 01:**
 
@@ -2190,7 +2195,7 @@ h1.technique-nine {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Media queries là gì? Ap dụng các quy tắc css cụ thể cho một Media như thế nào?
+## 40. Media queries là gì? Ap dụng các quy tắc css cụ thể cho một Media như thế nào?
 
 Media queries rất hữu ích khi bạn muốn sửa đổi trang web hoặc ứng dụng của mình tùy thuộc vào loại chung của thiết bị (chẳng hạn như in so với màn hình) hoặc các đặc điểm và thông số cụ thể (chẳng hạn như độ phân giải màn hình hoặc chiều rộng khung nhìn của trình duyệt). Nó sử dụng quy tắc @media để chỉ bao gồm một khối thuộc tính CSS nếu một điều kiện nhất định là đúng.
 
@@ -2290,19 +2295,19 @@ Media queries rất hữu ích khi bạn muốn sửa đổi trang web hoặc �
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Công dụng của `@media only screen` là gì?
+## 41. Công dụng của `@media only screen` là gì?
 
 Nó ẩn các biểu định kiểu khỏi các tác nhân người dùng cũ hơn.
 
-## Q. Từ khóa `screen` có áp dụng cho màn hình vật lý của thiết bị hoặc chế độ xem của trình duyệt không?
+## 42. Từ khóa `screen` có áp dụng cho màn hình vật lý của thiết bị hoặc chế độ xem của trình duyệt không?
 
 Browser\'s Viewport
 
-## Q. Triển khai một bộ thiết kế web sử dụng phông chữ không chuẩn như thế nào?
+## 43. Triển khai một bộ thiết kế web sử dụng phông chữ không chuẩn như thế nào?
 
 Sử dụng `@font-face` và xác định `font-family` cho các `font-weight` khác nhau.
 
-## Q. Làm cách nào trình duyệt xác định thành phần nào khớp với bộ chọn CSS?
+## 44. Làm cách nào trình duyệt xác định thành phần nào khớp với bộ chọn CSS?
 
 Trình duyệt khớp với bộ chọn từ ngoài cùng bên phải (bộ chọn phím) sang trái. Trình duyệt lọc các phần tử trong DOM theo bộ chọn khóa và duyệt qua các phần tử gốc của nó để xác định kết quả khớp. Độ dài của chuỗi bộ chọn càng ngắn thì trình duyệt có thể xác định xem phần tử đó có khớp với bộ chọn càng nhanh hay không.
 
@@ -2312,7 +2317,7 @@ Ví dụ: với bộ chọn `p span` này, trước tiên các trình duyệt s�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Làm thế nào để có thể tải tài nguyên css có điều kiện?
+## 45. Làm thế nào để có thể tải tài nguyên css có điều kiện?
 
 **@import**: cho phép tải biểu định kiểu bằng cách sử dụng đường dẫn (uri) biểu thị vị trí của tệp.
 
@@ -2337,7 +2342,7 @@ if (window.matchMedia('screen and (min-width: 600px)')) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. `* { box-sizing: border-box; }` làm gì? Ưu điểm của nó là gì?
+## 46. `* { box-sizing: border-box; }` làm gì? Ưu điểm của nó là gì?
 
 * Làm cho mọi phần tử trong tài liệu bao gồm phần đệm và đường viền theo kích thước bên trong của phần tử;
 giúp dễ dàng suy luận về cách bố trí các thành phần trên trang.
@@ -2351,7 +2356,7 @@ giúp dễ dàng suy luận về cách bố trí các thành phần trên trang.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Liệt kê thuộc tính hiển thị trong CSS?
+## 47. Liệt kê thuộc tính hiển thị trong CSS?
 
 Thuộc tính display chỉ định hành vi hiển thị (loại hộp kết xuất) của một phần tử.
 
@@ -2396,7 +2401,7 @@ p.ex4 {display: inline-block;}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Thiết kế responsive khác với thiết kế adaptive như thế nào?
+## 48. Thiết kế responsive khác với thiết kế adaptive như thế nào?
 
 **1) Responsive design** sử dụng `CSS media queries` để thay đổi kiểu dựa trên thiết bị đích như loại hiển thị, chiều rộng, chiều cao, v.v. và chỉ một trong số này là cần thiết để trang web thích ứng với các màn hình khác nhau.
 
@@ -2419,7 +2424,7 @@ Adaptive rất hữu ích trong việc trang bị thêm trang web hiện có đ�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Đồ họa retina là gì? Loại kỹ thuật nào để xử lý hình ảnh cho màn hình retina?
+## 49. Đồ họa retina là gì? Loại kỹ thuật nào để xử lý hình ảnh cho màn hình retina?
 
 Để có đồ họa sắc nét, đẹp mắt giúp phát huy tối đa màn hình retina, chúng ta cần sử dụng hình ảnh có độ phân giải cao bất cứ khi nào có thể. Tuy nhiên, việc luôn sử dụng hình ảnh có độ phân giải cao nhất sẽ ảnh hưởng đến hiệu suất vì sẽ cần gửi nhiều byte hơn qua đường truyền.
 
@@ -2477,7 +2482,7 @@ Các trình duyệt không hỗ trợ `srcset` của HTML5 (tức là IE11) sẽ
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Có lý do nào để sử dụng Translate() thay vì Position hoặc ngược lại không?
+## 50. Có lý do nào để sử dụng Translate() thay vì Position hoặc ngược lại không?
 
 `translate()` là một giá trị của CSS `transform`. Thay đổi `transform` hoặc `opacity` không kích hoạt reflow hoặc repaint của trình duyệt nhưng kích hoạt các compositions; trong khi thay đổi vị trí tuyệt đối kích hoạt `reflow`. `transform` khiến trình duyệt tạo lớp GPU cho phần tử nhưng thay đổi thuộc tính định vị tuyệt đối sử dụng CPU. Do đó, `translate()` hiệu quả hơn và sẽ tạo ra thời gian vẽ ngắn hơn cho các hoạt ảnh mượt mà hơn.
 
@@ -2511,11 +2516,11 @@ Trong trường hợp này, chúng tôi đang dịch tọa độ của phần t�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Hàm `translate()` có thể di chuyển vị trí của một phần tử trên trục z không?
+## 51. Hàm `translate()` có thể di chuyển vị trí của một phần tử trên trục z không?
 
 * Không
 
-## Q. Cho biết từng thẻ này có tác dụng gì, nếu có các lựa chọn thay thế, thẻ nào thích hợp hơn, tại sao?
+## 52. Cho biết từng thẻ này có tác dụng gì, nếu có các lựa chọn thay thế, thẻ nào thích hợp hơn, tại sao?
 
 **`<em>`**: Thẻ HTML `<em>` thể hiện sự nhấn mạnh vào nội dung của nó.
 
@@ -2579,7 +2584,7 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. At-Rule là gì?
+## 53. At-Rule là gì?
 
 At-rules là `các câu lệnh CSS` hướng dẫn CSS cách hành xử. Chúng bắt đầu bằng ký hiệu at, `@`, theo sau là mã định danh và bao gồm mọi thứ cho đến dấu chấm phẩy tiếp theo, `;` hoặc khối CSS tiếp theo, tùy điều kiện nào đến trước.
 
@@ -2606,7 +2611,7 @@ At-rules là `các câu lệnh CSS` hướng dẫn CSS cách hành xử. Chúng 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Làm thế nào có thể loại bỏ khoảng trống dưới hình ảnh?
+## 54. Làm thế nào có thể loại bỏ khoảng trống dưới hình ảnh?
 
 Vì hình ảnh là thành phần nội tuyến được xử lý giống như văn bản nên vẫn còn một khoảng trống, có thể được xóa bằng cách:
 
@@ -2620,7 +2625,7 @@ Vì hình ảnh là thành phần nội tuyến được xử lý giống như v
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Progressive rendering là gì?
+## 55. Progressive rendering là gì?
 
 Progressive rendering là tên được đặt cho các kỹ thuật được sử dụng để cải thiện hiệu suất của trang web (cụ thể là cải thiện thời gian tải được cảm nhận) nhằm hiển thị nội dung để hiển thị nhanh nhất có thể.
 
@@ -2634,7 +2639,7 @@ Progressive rendering là tên được đặt cho các kỹ thuật được s�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Mobile-first là gì? Sự khác biệt giữa việc mã hóa trang web để có tính phản hồi cao so với việc sử dụng chiến lược mobile-first không?
+## 56. Mobile-first là gì? Sự khác biệt giữa việc mã hóa trang web để có tính phản hồi cao so với việc sử dụng chiến lược mobile-first không?
 
 Làm cho trang web phản hồi nhanh có nghĩa là một số thành phần sẽ phản hồi bằng cách điều chỉnh kích thước của trang web hoặc chức năng khác theo kích thước màn hình của thiết bị, điển hình là chiều rộng khung nhìn, thông qua các media queries CSS, chẳng hạn như làm cho kích thước phông chữ nhỏ hơn trên các thiết bị nhỏ hơn.
 
@@ -2705,7 +2710,7 @@ mobile-first có 2 ưu điểm chính:
 
 
 
-## Q. Làm cách nào để khôi phục giá trị mặc định của thuộc tính?
+## 57. Làm cách nào để khôi phục giá trị mặc định của thuộc tính?
 
 Từ khóa `initial` có thể được sử dụng để đặt lại nó về giá trị mặc định, được xác định trong đặc tả CSS của thuộc tính đã cho.
 
@@ -2713,7 +2718,7 @@ Từ khóa `initial` có thể được sử dụng để đặt lại nó về 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Tính đặc hiệu là gì?
+## 58. Tính đặc hiệu là gì?
 
 Quá trình xác định quy tắc css nào sẽ được áp dụng cho một phần tử. Nó thực sự xác định quy tắc nào sẽ được ưu tiên. Kiểu Inline thường thắng sau đó là ID rồi đến giá trị class (hoặc pseudo-class hoặc bộ chọn thuộc tính), bộ chọn phổ quát (*) không có tính đặc hiệu. Bộ chọn ID có độ đặc hiệu cao hơn bộ chọn thuộc tính.
 
@@ -2749,7 +2754,7 @@ html body div div h2 p {}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. CSS Transitions?
+## 59. CSS Transitions?
 
 **CSS Transitions** cho phép thêm hiệu ứng trong khi thay đổi từ kiểu này sang kiểu khác. Bạn có thể đặt thuộc tính nào bạn muốn chuyển đổi, thời lượng, cách bạn muốn chuyển tiếp (linear, ease, ease-in, ease-out, cubic-bezier) và độ trễ khi quá trình chuyển đổi sẽ bắt đầu.
 
@@ -2779,7 +2784,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. CSS Filters?
+## 60. CSS Filters?
 
 Thuộc tính CSS bộ lọc áp dụng các hiệu ứng đồ họa như blur hoặc color shift cho một phần tử. Bộ lọc thường được sử dụng để điều chỉnh hiển thị images, backgrounds, và borders.
 
@@ -2819,7 +2824,7 @@ img {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. CSS Background?
+## 61. CSS Background?
 
 
 |  Thuộc tính             | Mô tả                               |
@@ -2839,7 +2844,7 @@ img {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Đơn vị `rem` và `em`?
+## 62. Đơn vị `rem` và `em`?
 
 Cả đơn vị `em` và `rem` đều dựa trên thuộc tính CSS cỡ chữ. Sự khác biệt duy nhất là họ kế thừa các giá trị của mình từ đâu.
 
@@ -2904,7 +2909,7 @@ Cả đơn vị `em` và `rem` đều dựa trên thuộc tính CSS cỡ chữ. 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. `!important` CSS?
+## 63. `!important` CSS?
 
 Nó ghi đè tầng và đặt quy tắc kiểu có mức độ ưu tiên cao nhất.
 
@@ -2924,7 +2929,7 @@ p {
 </div>
 
 
-## Q. CSS Postion?
+## 64. CSS Postion?
 
 |Từ khóa    | Giá trị                 |Mô tả                                                                           |
 |:----------|:----------------------|:-------------------------------------------------------------------------------------|
@@ -2941,7 +2946,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Padding và Margin?
+## 65. Padding và Margin?
 
 **1) Margin** được áp dụng cho bên ngoài phần tử của bạn, do đó ảnh hưởng đến khoảng cách giữa phần tử của bạn với các phần tử khác.
 **2) Padding** được áp dụng cho bên trong phần tử của bạn, do đó ảnh hưởng đến khoảng cách giữa content của phần tử của bạn với border.
@@ -2958,7 +2963,7 @@ Ngoài ra, việc sử dụng margin sẽ không ảnh hưởng đến kích th�
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Gradients?
+## 66. Gradients?
 
 CSS gradients are represented by the `<gradient>` data type, a special type of `<image>` made of a progressive transition between two or more colors. There are three types of gradients: 
 * linear (created with the `linear-gradient()` function), 
@@ -2996,7 +3001,7 @@ We can also create repeating gradients with the `repeating-linear-gradient()`, `
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Opacity
+## 67. Opacity
 
 <p align="center">
   <img src="assets/images/box-opacity.jpg" alt="CSS Opacity" />
@@ -3027,7 +3032,7 @@ div { background-color: lightblue; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Inherit
+## 68. Inherit
 
 Kế thừa là khái niệm trong đó lớp con sẽ kế thừa các thuộc tính của lớp cha. Nó được sử dụng trong CSS để xác định thứ bậc từ cấp cao nhất đến cấp dưới cùng. Các thuộc tính được kế thừa có thể bị lớp con ghi đè nếu lớp con sử dụng cùng tên.
 
@@ -3047,7 +3052,7 @@ span {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt về trình duyệt trong cơ sở người dùng?
+## 69. Sự khác biệt về trình duyệt trong cơ sở người dùng?
 
 Truy vấn `@supports` trong CSS có thể rất hữu ích để quét xem trình duyệt hiện tại của người dùng có một tính năng nhất định hay không. Quy tắc CSS `@supports` cho phép bạn chỉ định các khai báo phụ thuộc vào sự hỗ trợ của trình duyệt đối với một hoặc nhiều tính năng CSS cụ thể. Đây được gọi là truy vấn tính năng. Quy tắc có thể được đặt ở cấp cao nhất trong mã của bạn hoặc được lồng bên trong bất kỳ quy tắc nhóm có điều kiện nào khác.
 
@@ -3069,7 +3074,7 @@ Truy vấn `@supports` trong CSS có thể rất hữu ích để quét xem trì
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Cascade
+## 70. Cascade
 
 Xếp tầng (Cascade) là một phương pháp xác định trọng số (tầm quan trọng) của các quy tắc tạo kiểu riêng lẻ, do đó cho phép sắp xếp các quy tắc xung đột nếu các quy tắc đó áp dụng cho cùng một bộ chọn.
 
@@ -3082,7 +3087,7 @@ P (color: black} /* normal weight */
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Tiền tố của nhà cung cấp CSS
+## 71. Tiền tố của nhà cung cấp CSS
 
 Tiền tố của nhà cung cấp là phần mở rộng cho các tiêu chuẩn CSS có thể được thêm vào các tính năng này để ngăn chặn sự không tương thích phát sinh khi tiêu chuẩn được mở rộng. Tiền tố của nhà cung cấp CSS cho một số nền tảng phổ biến được liệt kê bên dưới.
 
@@ -3095,7 +3100,7 @@ Tiền tố của nhà cung cấp là phần mở rộng cho các tiêu chuẩn 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. DOM (Document Object Model)?
+## 72. DOM (Document Object Model)?
 
 Document Object Model (DOM) là giao diện lập trình cho các tài liệu HTML và XML (Ngôn ngữ đánh dấu mở rộng). Nó xác định cấu trúc logic của tài liệu và cách tài liệu được truy cập và thao tác. Tài liệu này cho phép Javascript truy cập và thao tác các thành phần và kiểu của trang web. Mô hình được xây dựng theo cấu trúc cây của các đối tượng và xác định:
 
@@ -3245,7 +3250,7 @@ var parent = document.getElementById("heading").parentNode
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Thuộc tính "table-layout"?
+## 73. Thuộc tính "table-layout"?
 
 Thuộc tính CSS **table-layout** đặt thuật toán được sử dụng để bố trí các cells, rows, and columns `<table>`.
 
@@ -3332,7 +3337,7 @@ table-layout: auto|fixed|initial|inherit;
 </div>
 
 
-## Q. Calc()
+## 74. Calc()
 
 Hàm `calc()` có thể được sử dụng để thực hiện các phép tính cộng, trừ, nhân và chia với các giá trị thuộc tính số. Cụ thể, nó có thể được sử dụng với các loại dữ liệu `<length>`, `<tần số>`, `<angle>`, `<time>`, `<number>` hoặc `<integer>`.
 
@@ -3359,7 +3364,7 @@ Hàm `calc()` có thể được sử dụng để thực hiện các phép tín
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Variables 
+## 75. Variables 
 
 Thuộc tính tùy chỉnh (đôi khi được gọi là **Variables CSS** hoặc **cascading variables**) là các thực thể do tác giả CSS xác định và chứa các giá trị cụ thể sẽ được sử dụng lại trong toàn bộ tài liệu. Chúng được thiết lập bằng ký hiệu thuộc tính tùy chỉnh (ví dụ: `--main-color: black;`) và được truy cập bằng hàm `var()` (ví dụ: `color: var(--main-color);`).
 
@@ -3415,7 +3420,7 @@ Tên thuộc tính có tiền tố `--`, như `--example-name`, biểu thị cá
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Sự khác biệt giữa các biến CSS và các biến tiền xử lý (SASS, LESS, Stylus) là gì?
+## 76. Sự khác biệt giữa các biến CSS và các biến tiền xử lý (SASS, LESS, Stylus) là gì?
 
 Các biến SASS được thay thế bằng các giá trị của chúng vì bộ tiền xử lý tạo ra đầu ra CSS của nó rất lâu trước khi trình duyệt diễn giải mã, trong khi các thuộc tính tùy chỉnh CSS được trình duyệt đánh giá trong thời gian chạy.
 
@@ -3466,7 +3471,7 @@ CSS gốc đã bắt đầu hỗ trợ các biến CSS hoặc "Thuộc tính tù
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Vendor-Prefixes
+## 77. Vendor-Prefixes
 
 Vendor-Prefixes CSS, đôi khi còn được gọi là CSS browser prefixes, là một cách để các nhà sản xuất trình duyệt bổ sung hỗ trợ cho các tính năng CSS mới trước khi các tính năng đó được hỗ trợ đầy đủ trong tất cả các trình duyệt.
 
@@ -3495,7 +3500,7 @@ Các trình duyệt chính sử dụng các tiền tố sau:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Image-scroll
+## 78. Image-scroll
 
 Thuộc tính **background-attachment** trong CSS được sử dụng để chỉ định loại tệp đính kèm của hình nền đối với vùng chứa của nó. Nó có thể được thiết lập để cuộn hoặc vẫn cố định. Nó có thể được áp dụng cho tất cả các phần tử HTML.
 
@@ -3544,7 +3549,7 @@ background-attachment: scroll|fixed|local|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Overflow
+## 79. Overflow
 
 Thuộc tính tràn CSS chỉ định cách xử lý nội dung khi nó tràn vùng chứa cấp khối.
 
@@ -3603,7 +3608,7 @@ overflow: visible|hidden|scroll|auto|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Word-wrapping
+## 80. Word-wrapping
 
 Thuộc tính `word-wrap` trong CSS được sử dụng để ngắt từ dài và ngắt dòng sang dòng tiếp theo. Nó xác định xem có ngắt các từ hay không khi nội dung vượt quá ranh giới của vùng chứa nó.
 
@@ -3667,7 +3672,7 @@ word-wrap: normal|break-word|initial|inherit;
 
 
 
-## Q. CSS hoạt động cơ bản như thế nào?
+## 81. CSS hoạt động cơ bản như thế nào?
 
 Ngôn ngữ CSS được thiết kế để sử dụng cùng với ngôn ngữ "đánh dấu" như HTML. CSS xác định cách các phần tử HTML được định dạng - kiểm soát bố cục, màu sắc, phông chữ, v.v. Khi trình duyệt hiển thị một tài liệu, nó phải kết hợp nội dung của tài liệu với thông tin kiểu của nó. Nó xử lý tài liệu theo một số giai đoạn, chúng tôi đã liệt kê dưới đây.
 
