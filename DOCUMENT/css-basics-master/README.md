@@ -3414,7 +3414,6 @@ Tên thuộc tính có tiền tố `--`, như `--example-name`, biểu thị cá
 </div>
 ```
 
-**Live Demo**: [Custom Properties Variables](https://learning-zone.github.io/css-interview-questions/assets/files/custom-properties.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -3426,7 +3425,7 @@ Các biến SASS được thay thế bằng các giá trị của chúng vì b�
 
 **Example:** Preprocessor Variable
 
-```css
+```scss
 $brandColor: #F06D06;
 
 .main-header {
