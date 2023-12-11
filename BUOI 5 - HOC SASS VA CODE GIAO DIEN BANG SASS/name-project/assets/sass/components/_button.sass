@@ -1,43 +1,5 @@
-.btn
-    @extend .font-syne
-    display: block
 
-    //type
-    &-fill
-        background: $neutral-950
-        color: $white
-    &-text
-        display: flex
-        align-item: center
-        gap: 0.6rem
-        padding: 0 !important
-    &-outline
-        border: 0.2rem solid $neutral-800
-    //size
-    &-sm
-        padding: 1.3rem 2.4rem
-        font-size: 1.6rem
-        font-weight: 600
-        line-height: 2rem
-
-    &-md
-        font-size: 1.8rem
-        line-height: 2.2rem
-        font-weight: 600
-        padding: 1.5rem 2.8rem 
-
-    &-lg
-        font-size: 2.2rem
-        line-height: 2.6rem
-        font-weight: 600
-        padding: 1.9rem 4.4rem
-    //pill
-    &-pill
-        border-radius: 100rem
-    &-rounded
-        border-radius: 0.8rem
-    
-    &-inline
-        display: inline-block
-
-
+.btn-grp-test
+    margin: 80px 0
+    .btn
+        +btn(pill,lg,light,fasle,fasle)

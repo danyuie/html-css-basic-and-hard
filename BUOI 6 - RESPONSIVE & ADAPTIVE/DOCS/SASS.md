@@ -141,3 +141,20 @@ Trong đoạn mã trên, `@mixin responsive` là mixin chúng ta đã tạo. Nó
 
 Chú ý rằng trong Sass, chúng ta sử dụng dấu cộng `+` để gọi mixin thay vì `@include`. Ngoài ra, bạn không cần dấu ngoặc nhọn cho các điều kiện `@if` trong Sass.
 
+## **4. CÁC BREAKPOINT**
+
+**responsive:**
+* sm: 320px
+* md: 768px
+* lg: 1024px
+
+**Adaptive:**
+* 320px
+* 480px
+* 768px
+* 1024px
+* xl: 1200px
+* 1xl: 1366px
+* 2xl: 1440px
+* 3xl: 1600px
+* 4xl: 1920px

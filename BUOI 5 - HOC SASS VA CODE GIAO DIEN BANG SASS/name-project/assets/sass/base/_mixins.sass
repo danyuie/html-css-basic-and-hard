@@ -1,6 +1,104 @@
-@mixin text($font-size)
-// @mixin color-style($color, $font-size, $line-height, $font-weight) 
-//     color: $white
-//     font-size: 1.8rem
-//     line-height: 3rem
-//     font-weight: 600
+// mixin for button with properties:(type, size, theme, outline, only-icon)
+@mixin btn($type: pill, $size: md, $theme: dark,$outline: fasle, $only-icon: fasle)
+  @extend .font-syne
+  font-weight: 600
+  display: flex
+  align-items: center
+  outline: none
+  cursor: pointer
+  padding: 0
+
+  // check theme values
+  @if $theme == dark
+      background: $button-bg-dark
+      border: 0.2rem solid $button-outline-dark
+      color: $button-text-light
+  @else if $theme == light
+      background: $button-bg-light
+      border: 0.2rem solid $button-outline-light
+      color: $button-text-dark
+
+  // check type values
+  @if $type == pill
+      border: none
+      border-radius: 100rem
+      // ...
+  @if $type == rounded
+      border: none
+      border-radius: 0.8rem
+      // ...
+  @if $type == sharp
+      border: none
+      border-radius: none
+      // ...
+  @if $type == line
+      background: none
+      border: none
+      @if $theme == dark
+          color: $button-text-dark
+      @else if $theme == light
+          color: $button-text-light
+      // ...
+  @if $outline == true
+      background: none
+      @if $theme == dark
+          border: 0.2rem solid $button-outline-dark
+          color: $button-text-dark
+      @else if $theme == light
+          border: 0.2rem solid $button-outline-light
+          color: $button-text-light
+      // ...
+  @if $only-icon == true
+      padding: 0
+      justify-content: center
+      @if $size == sm
+          width: $button-icon-sm
+          height: $button-icon-sm
+          img
+              width: $button-svg-sm
+              height: $button-svg-sm
+          // ...
+      @if $size == md
+          width: $button-icon-md
+          height: $button-icon-md
+          img
+              width: $button-svg-md
+              height: $button-svg-md
+          // ...
+      @if $size == lg
+          width: $button-icon-lg
+          height: $button-icon-lg
+          img
+              width: $button-svg-lg
+              height: $button-svg-lg
+          // ...
+  
+  // check size values
+  @if $size == sm
+      padding: 1.3rem 2.4rem
+      font-size: $button-text-sm
+      line-height: $button-lh-sm
+      gap: $button-gap-sm
+      img
+          width: $button-text-svg-sm
+          height: $button-text-svg-sm
+      // ...
+  @if $size == md
+      padding: 1.4rem 2.9rem
+      font-size: $button-text-md
+      line-height: $button-lh-md
+      gap: $button-gap-md
+      img
+          width: $button-text-svg-md
+          height: $button-text-svg-md
+      // ...
+  @if $size == lg
+      padding: 1.6rem 4.4rem
+      font-size: $button-text-lg
+      line-height: $button-lh-lg
+      gap: $button-gap-lg
+      img
+          width: $button-text-svg-lg
+          height: $button-text-svg-lg
+      // ...
+
